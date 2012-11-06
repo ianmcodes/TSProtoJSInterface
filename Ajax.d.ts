@@ -1,0 +1,5 @@
+interface Ajax {
+	
+	activeRequestCount: number;
+	
+}
