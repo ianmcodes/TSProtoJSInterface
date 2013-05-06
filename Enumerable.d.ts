@@ -14,7 +14,7 @@ interface Enumerable {
 	include(object): bool;
 	inGroupsOf(number, fillWith): any[];
 	inject(memo, iterator, context): any[];
-	inspect(): String;
+	inspect(): string;
 	invoke(method): any[];
 	map(iterator, context): any[];
 	max(iterator, context): any;
