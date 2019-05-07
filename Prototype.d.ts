@@ -45,3 +45,5 @@ declare var Prototype: Prototype;
 declare class Form {
 	serialize(div: PrototypeSelector): string;
 }
+
+declare function $$(selector: string): HTMLElement;
