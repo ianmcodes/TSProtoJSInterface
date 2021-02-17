@@ -46,4 +46,4 @@ declare class Form {
 	serialize(div: PrototypeSelector): string;
 }
 
-declare function $$(selector: string): HTMLElement;
+declare function $$(selector: string): HTMLElement[];
