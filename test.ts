@@ -1,5 +1,6 @@
 /// <reference path="Prototype.d.ts" />
 
+import {Ajax} from "./Ajax";
 function test () {
 	if(Prototype.Browser.IE) {
 		alert("IE");
@@ -14,4 +15,12 @@ function test () {
 	} else {
 		alert("I cannot detect what kind of browser you are using");
 	}
+}
+
+class TestJDTS {
+
+	ajax() {
+		Ajax.Updater('me');
+	}
+
 }

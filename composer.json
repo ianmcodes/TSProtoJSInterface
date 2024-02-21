@@ -1,0 +1,7 @@
+{
+  "name": "spidgorny/ts-prototype-js-interface",
+  "description": "Typescript definition for PrototypeJS. Updated.",
+  "replace": [
+    "dapuck/TSProtoJSInterface"
+  ]
+}

@@ -7,13 +7,13 @@ interface AjaxPeriodicalUpdater {
 interface AjaxRequest {
 	getHeader(name: string): string;
 	
-	success(): bool;
+	success(): boolean;
 }
 
 interface AjaxResponders {
-	register(responder: object): void;
+	register(responder: Object): void;
 	
-	unregister(responder: object): void;
+	unregister(responder: Object): void;
 }
 
 interface AjaxResponse {
@@ -25,13 +25,13 @@ interface AjaxResponse {
 	
 	getResponseHeader(name: string): string;
 	
-	headerJSON: object;
+	headerJSON: Object;
 	
 	readyState: number;
 	
 	request: AjaxRequest;
 	
-	responseJSON: object;
+	responseJSON: Object;
 	
 	responseText: string;
 	

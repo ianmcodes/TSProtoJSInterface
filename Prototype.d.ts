@@ -1,18 +1,18 @@
 /// <reference path="Enumerable.d.ts" />
 
 interface PrototypeBrowser {
-	Gecko: bool;
-	IE: bool;
-	MobileSafari: bool;
-	Opera: bool;
-	WebKit: bool;
+	Gecko: boolean;
+	IE: boolean;
+	MobileSafari: boolean;
+	Opera: boolean;
+	WebKit: boolean;
 }
 
 interface PrototypeBrowserFeatures {
-	ElementExtensions: bool;
-	SelectorsAPI: bool;
-	SpecificElementExtensions: bool;
-	XPath: bool;
+	ElementExtensions: boolean;
+	SelectorsAPI: boolean;
+	SpecificElementExtensions: boolean;
+	XPath: boolean;
 }
 
 interface PrototypeSelector {
@@ -22,7 +22,7 @@ interface PrototypeSelector {
 
 	find(elements: Element[], expresion, index): Element;
 
-	match(element, expresion): bool;
+	match(element, expresion): boolean;
 
 	select(expresion, root): Element[];
 }
@@ -41,3 +41,9 @@ interface Prototype {
 }
 
 declare var Prototype: Prototype;
+
+declare class Form {
+	serialize(div: PrototypeSelector): string;
+}
+
+declare function $$(selector: string): HTMLElement[];
